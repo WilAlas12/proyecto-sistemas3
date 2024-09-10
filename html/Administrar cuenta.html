@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BanconTdosOnline</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/header2.css">
+    <link rel="stylesheet" href="../css/Operaciones.css">
+    <link rel="stylesheet" href="../css/administrar.css">
+
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+
+        <div class="pag">
+
+            <div class="comp">
+                <h1 class="tlt"> Administrador de Cuentas</h1>
+
+                <div class="compt">
+                    <label for="alertas">Recibir alertas de movimientos a:</label>
+                    <div>
+                        <select name="alert" id="alertas" class="input-text">
+                            <option value="Correo">Correo</option>
+                            <option value="Mensaje">Mensaje</option>
+                        </select>
+
+                        <input type="button" class="buton-AdC" value="Cambiar">
+                    </div>
+                </div>
+            </div>
+
+            <div class="part">
+                <div class="contenedor">
+                    <div class="tabla-datos">
+                        <table class="tabla">
+                            <h2> Cuenta Moneda Nacional</h3>
+                                <thead>
+                                    <tr>
+                                        <th>Tipo de cuenta</th>
+                                        <th>Cuenta</th>
+                                        <th>Saldo actual</th>
+                                        <th>Accion</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td>Ahorrro</td>
+                                        <td>150103**0501</td>
+                                        <td>1550 Bs</td>
+                                        <td>
+                                            <a href="#modal">
+                                                <img class="basura" src="../images/trash-solid.svg" alt="">
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="active-column">
+                                        <td>Corriente</td>
+                                        <td>150107**0501</td>
+                                        <td>628,50 Bs</td>
+                                        <td>
+                                            <a href="#modal">
+                                                <img class="basura" src="../images/trash-solid.svg" alt="">
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+
+                        </table>
+                    </div>
+
+                </div>
+                <div class="contenedor">
+                    <div class="tabla-datos">
+                        <table class="tabla" id="tabla">
+                            <h2> Cuenta Moneda Extranjera</h3>
+                                <thead>
+                                    <tr>
+                                        <th>Tipo de cuenta</th>
+                                        <th>Cuenta</th>
+                                        <th>Saldo actual</th>
+                                        <th>Accion</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td>Corriente $</td>
+                                        <td>150107**4098</td>
+                                        <td>9 $</td>
+                                        <td>
+                                            <a href="#modal">
+                                                <img class="basura" src="../images/trash-solid.svg" alt="">
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="active-column">
+                                        <td>Corriente EUR</td>
+                                        <td>150107**3041</td>
+                                        <td>9 EUR</td>
+                                        <td>
+                                            <a href="#modal">
+                                                <img class="basura" src="../images/trash-solid.svg" alt="">
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- modal -->
+    <section class="modal" id="modal">
+        <div class="contenedor_modal">
+            <a href="#" class="cerrar">X</a>
+
+            <div class="info-Usurio">
+                <h3 class="title-modal">Procedimiento para eliminar cuenta</h3>
+                <p>luego de aceptar nuestro equipo se hara cargo del proceso de eliminacion de su cuenta,
+                    si desea cancelar el prodeso de eliminacion de cuenta debera dirigirse a nuestra sucursal mas
+                    cercana y notificar al servicio de atencion al cliente,
+                    tendra 3 dias para cancelar el borrado de su cuenta (apartir del dia de la solicitud)</p>
+
+                <form action="administrar.html" class="form">
+                    <div class="b">
+                        <input type="password" name="Contra" placeholder="Contraseña" required class="input-text" />
+                    </div>
+
+                    <div class="b">
+                        <a href="" class="bton" id="Bsalir">
+                            Salir
+                        </a>
+
+                        <input type="submit" value="Confirmar" class="bton" />
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        <div class="piso">
+        </div>
+    </footer>
+
+    <script src="../js/head-banco.js"></script>
+    <script src="../js/menu.js"></script>
+
+
+
+</body>
+
+</html>

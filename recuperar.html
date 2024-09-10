@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BanconTdos</title>
+    <link rel="stylesheet" href="./css/recuperar.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <a class="index-redi" href="Login.html">
+                    <img src="images/logo-cn.png" class="image-logo1" />
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="pag">
+            <div class="contenedor">
+                <div class="contenido">
+                    <h3 class="tlt">Recuperar contraseña</h3>
+
+
+                    <form action="cambioContra.html">
+
+
+                        <div class="info-Usurio">
+                            <input type="text" name="Usurio" placeholder="Usuario" required class="input-text" pattern="^(?!\s+$).*\S$">
+                        </div>
+
+                        <div class="info-Usurio">
+                            <select name="Cuenta" required class="input-text">
+                                <option value=""> Metodo de Recuperacion </option>
+                                <option value="metodo1"> por Correo</option>
+                                <option value="metodo2"> por Mensaje</option>
+                            </select>
+                        </div>
+
+                        <div class="info-Usurio">
+                            <div class="metodo1">
+                                <input type="email" name="correo" required placeholder="Correo" class="input-text" >
+                            </div>
+                        </div>
+
+                        <div class="metodo2" style="display: none;">
+                            <div class="info-Usurio">
+
+                                <input type="tel" name="num" placeholder="Numero de telefono" class="input-text" />
+                            </div>
+                        </div>
+
+                        <div class="b">
+                            <input type="submit" value="Enviar codigo" class="bton" />
+                        </div>
+
+                        <p class="text">
+                            Si eres nuevo cliente <a href="Sign-in.html"
+                                style="color:#2F473D; text-decoration: none;">Regístrate aquí</a> <br>
+                            Ya tienes cuenta? <a href="Login.html" style="color:#2F473D; text-decoration: none;">Inicia
+                                aquí</a>
+                        </p>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

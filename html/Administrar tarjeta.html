@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BanconTdosOnline</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/header2.css">
+    <link rel="stylesheet" href="../css/Operaciones.css">
+    <link rel="stylesheet" href="../css/administrar.css">
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+
+        <div class="pag">
+
+            <div class="comp">
+                <h1 class="tlt"> Administrador de Tarjetas</h1>
+
+            </div>
+
+            <div class="part">
+                <div class="contenedor">
+                    <div class="tabla-datos">
+                        <table class="tabla">
+                            <h2> Tarjta de Credito</h3>
+                                <tbody>
+                                    <tr class="active-column">
+                                        <td>Numero de tarjeta</td>
+                                        <td>Limite de Credito</td>
+                                        <td>Saldo actual</td>
+                                        <td>Fecha de Corte</td>
+                                        <td>Tasa de interes</td>
+                                        <td>Renovarción</td>
+                                        <td>Accion</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>7548 4151 1251 8499</td>
+                                        <td>90.000,00 Bs</td>
+                                        <td>1.489,25 Bs</td>
+                                        <td> 08 Octube</td>
+                                        <td>5%</td>
+                                        <td> 06/2027</td>
+                                        <td>
+                                            <a href="#modal">
+                                                Bloquear
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+
+                        </table>
+                    </div>
+
+                </div>
+                <div class="contenedor">
+                    <div class="tabla-datos">
+                        <table class="tabla" id="tabla">
+                            <h2> Tarjeta de Debito</h3>
+                                <tbody>
+                                    <tr class="active-column">
+                                        <td>Numero de tarjeta</td>
+                                        <td>Tipo de Tarjeta</td>
+                                        <td>Cuenta Asociada</td>
+                                        <td>Renovarción</td>
+                                        <td>Accion</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>5768 4592 2453 7575</td>
+                                        <td>Master Card</td>
+                                        <td>
+                                            <select name="entrada" id="entrada" class="input-tabla">
+                                                <option value="entrada1">Ahorro - 150103**0501</option>
+                                                <option value="entrada2" selected>Corriente Bs - 150107**0501</option>
+                                                <option value="entrada3">Corriente $ - 150107**4098</option>
+                                                <option value="entrada4">Corriente € - 150107**3041</option>
+                                            </select>
+                                        </td>
+                                        <td> 07/2027</td>
+                                        <td>
+                                            <a href="#modal">
+                                                Bloquear
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+
+                        </table>
+                    </div>
+                </div>
+                <div class="contenedor">
+                    <div class="tabla-datos">
+                        <table class="tabla" id="tabla">
+                            <h2> Tarjeta Virtual</h3>
+
+                                <tbody>
+                                    <tr class="active-column">
+                                        <td>Numero de tarjeta</td>
+                                        <td>Tipo de Tarjeta</td>
+                                        <td>Cuenta Asociada</td>
+                                        <td>Renovarción</td>
+                                        <td>Accion</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>4920 6200 8926 8333</td>
+                                        <td>Visa Prepagada</td>
+                                        <td>
+                                            <select name="estado" id="estado" class="input-tabla">
+                                                <option value="estado1">Ahorro - 150103**0501</option>
+                                                <option value="estado2">Corriente Bs - 150107**0501</option>
+                                                <option value="estado3" selected>Corriente $ - 150107**4098</option>
+                                                <option value="estado4">Corriente € - 150107**3041</option>
+                                            </select>
+                                        </td>
+                                        <td> 01/2027</td>
+                                        <td>
+                                            <a href="#modal">
+                                                Bloquear
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- modal -->
+    <section class="modal" id="modal">
+        <div class="contenedor_modal">
+            <a href="#" class="cerrar">X</a>
+
+            <div class="info-Usurio">
+                <h3 class="title-modal">Procedimiento para Realizar su peticion</h3>
+                <p>
+                    Necesitamos confirmar que eres tu quien realiza la petición, pofavor ingrese su contraseña
+                    en el campo designado
+                </p>
+
+                <form action="Administrar tarjeta.html" class="form">
+                    <div class="b">
+                        <input type="password" name="Contra" placeholder="Contraseña" required class="input-text" />
+                    </div>
+
+                    <div class="b">
+                        <a href="" class="bton" id="Bsalir">
+                            Salir
+                        </a>
+
+                        <input type="submit" value="Confirmar" class="bton" />
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        <div class="piso">
+        </div>
+    </footer>
+
+    <script src="../js/head-banco.js"></script>
+    <script src="../js/menu.js"></script>
+
+
+
+</body>
+
+</html>

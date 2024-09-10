@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BanconTdosOnline</title>
+    <link rel="stylesheet" href="../css/cambio.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <a class="index-redi" href="bancontdo.html">
+                    <img src="../images/logo-cn.png" class="image-logo1" />
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="pag">
+            <div class="contenedor">
+                <div class="contenido">
+                    <h3 class="tlt">Cambio de Numero</h3>
+
+                    <form action="profile.html">
+
+                        <div class="info-Usurio">
+                            <input type="tel" name="telf" id="telf" placeholder="Nuevo numero de telefono"
+                                pattern="0[0-9]{10}" required class="input-text" />
+                        </div>
+
+
+
+                        <div class="info-Usurio">
+                            <div class="cajaV">
+                                <button type="button" id="Bvalidar" onclick="validarNumero()"
+                                    class="bton">Validar</button>
+                                <input type="text" id="input-code" name="mesaje" placeholder="Codigo de confirmacion"
+                                    required class="input-text" />
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="b">
+                            <input type="button" id="Bcancel" onclick="location='profile.html'" value="Cancelar"
+                                class="bton" />
+                            <input type="submit" value="Actualizar" class="bton" />
+                        </div>
+
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+
+    <script>
+        function validarNumero() {
+            const num = document.getElementById("telf").value;
+            const valido = /^0\d{10}$/;
+
+            if (valido.test(num)) {
+                alert("Un codigo de verificacion se a enviado al nuevo numero, porfavor verifique y coloque el codigo en el lugar designado")
+            } else {
+                alert(" porfavor ingrese un numero valido");
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

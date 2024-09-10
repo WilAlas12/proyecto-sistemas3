@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BanconTdosOnline</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/header2.css">
+    <link rel="stylesheet" href="../css/Operaciones.css">
+</head>
+
+<body>
+
+    <header></header>
+
+    <main>
+
+        <div class="pag">
+            <div class="contenedor">
+                <div class="contenido">
+                    <h3 class="tlt">Pago de servicios</h3>
+                    <form action="bancontdo.html">
+
+                        <div class="info-Usurio">
+
+                            <select name="Cuenta" required class="input-text">
+                                <option value="">Seleccione Cuenta a debitar</option>
+                                <option value="cuenta1">150103**0501</option>
+                                <option value="Cuenta2">150107**0532</option>
+                            </select>
+
+                        </div>
+
+                        <div class="info-Usurio">
+                            <select name="Cuenta" required class="input-text">
+                                <option value="">Seleccione tipo servicio</option>
+                                <option value="tipo1">Prepago</option>
+                                <option value="tipo2">Postpago</option>
+                            </select>
+                        </div>
+
+                        <div class="info-Usurio">
+                            <div class="buscar">
+
+                            </div>
+                            <select name="Cuenta" required class="input-text">
+                                <option value="">Seleccione servicio</option>
+                                <option value="servicio1">Movistar - Telefonia fija</option>
+                                <option value="servicio2">Digitel - Telefonia fija</option>
+                            </select>
+
+                        </div>
+
+                        <div class="info-Usurio">
+                            <input type="tel" name="Numero Telefonico" placeholder="Numero Telefonico" required pattern="[0-9]+"
+                                class="input-text">
+
+                        </div>
+
+                        <div class="info-Usurio">
+                            <input type="text" name="Monto" id="" placeholder="Monto a pagar:" required pattern="[0-9]+"
+                                class="input-text">
+                        </div>
+
+                        <div class="info-Usurio">
+                            <input type="text" name="concepto" id="" placeholder="concepto de pago:" required pattern="^(?!\s+$).*\S$"
+                                class="input-text">
+                        </div>
+
+                        <div class="b">
+
+                            <input type="reset" value="Limpiar" id="Blimpiar" class="bton">
+
+                            <input type="submit" value="Pagar" class="bton" />
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <script src="../js/head-banco.js"></script>
+    <script src="../js/menu.js"></script>
+
+</body>
+
+</html>

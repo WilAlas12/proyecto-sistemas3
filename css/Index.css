@@ -1,0 +1,171 @@
+.pag {
+   position: inherit;
+   width: 100%;
+   background-color: #ffffff;
+   height: auto;
+}
+
+.titulo {
+   color: #000;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1;
+   margin-bottom: 0.7rem;
+   width: auto;
+
+}
+
+.cobox {
+   width: 100%;
+   top: 0px;
+   padding: 10px;
+   height: auto;
+   background-color: #fafafaec;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+
+.img-publicidad {
+   padding: 10px;
+   width: 1220px;
+   height: 380px;
+   border-radius: 25px;
+}
+
+.i_enun {
+   width: 250px;
+   height: 250x;
+}
+
+.buton {
+   padding: 8px 12px;
+}
+
+.text-publicidad {
+   width: 100%;
+   height: auto;
+   margin: auto;
+}
+
+
+
+.enun {
+   font-weight: 100;
+   font-size: 12px;
+   text-align: left;
+   padding: 4px;
+   margin-left: 10px;
+   list-style-type: none;
+}
+
+.text1 h3 {
+   font-size: 16px;
+   padding: 5px 0px;
+}
+
+.inf {
+   width: 42%;
+   height: auto;
+   margin: 4px 12px;
+   float: left;
+}
+
+.estado {
+   background-color: #fafafaec;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#pan {
+   background-color: #22D289;
+   width: 100%;
+   padding-top: 30px;
+   margin-top: -25px;
+}
+
+#contimg {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.cr {
+   background-color: #fff;
+   width: 300px;
+   height: auto;
+   margin: 48px 20px;
+   float: left;
+   display: flex;
+   justify-content: center;
+   border-radius: 15px;
+   cursor: pointer;
+   box-shadow: 2.5px 5px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+.cr:hover {
+   box-shadow: 2.5px 5px 5px 2px rgba(0, 0, 0, 0.2);
+   transform: scale(1.08);
+}
+
+.cim {
+   padding: 10px;
+   width: 200px;
+   height: 200x;
+
+}
+
+.slick-arrow {
+   border-radius: 30px;
+   background-color: #fff;
+   z-index: 4;
+   width: 48px;
+   height: 48px;
+   text-align: center;
+   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+   border: none;
+   cursor: pointer;
+}
+
+.slick-arrow:hover {
+   box-shadow: 2.5px 5px 5px 2px rgba(0, 0, 0, 0.2);
+   transform: scale(1.1);
+}
+
+.slick-arrow:focus {
+   outline: 0;
+}
+
+.slick-arrow svg {
+   width: 12px;
+   height: 100%;
+   color: rgba(0, 0, 0, 0.7);
+}
+
+.slick-prev {
+   left: 0px;
+}
+
+.slick-next {
+   right: 0px;
+}
+
+.Btcd {
+
+   border: 2px solid #2F473D;
+   box-shadow: 2.5px 5px 5px 2px rgba(0, 0, 0, 0.2);
+   transition: all 0.3s ease 0s;
+}
+
+.Btcd:hover {
+   background-color: #ffffff;
+   color: #2F473D;
+   box-shadow: 2.5px 5px 5px 2px rgba(0, 0, 0, 0.2);
+   transform: scale(1.08);
+}

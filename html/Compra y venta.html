@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BanconTdosOnline</title>
+    <link rel="stylesheet" href="../css/Operaciones.css">
+    <link rel="stylesheet" href="../css/header2.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <header></header>
+
+    <main>
+        <div class="pag">
+            <div class="contenedor">
+                <div class="contenido">
+                    <h3 class="tlt">Moneda Extranjera</h3>
+
+
+                    <form action="bancontdo.html">
+
+                        <div class="info-Usurio">
+
+                            <select name="accion" id="accion" required class="input-text">
+                                <option value="">Seleccione la operacion</option>
+                                <option value="comprar" selected>comprar</option>
+                                <option value="vender">vender</option>
+                            </select>
+                        </div>
+
+                        <div class="info-Usurio">
+
+                            <select name="cmp" id="cmp" required class="input-text">
+                                <option value="">Seleccione Cuenta a debitar</option>
+                                <option value="cuenta1">Corriente Bs - 150103**0501</option>
+                                <option value="Cuenta2">Ahorro - 150107**0532</option>
+                            </select>
+
+                            <select name="vend" id="vend" class="input-text" style="display: none;">
+                                <option value="">Seleccione Cuenta a debitar</option>
+                                <option value="cuenta3">Corriente $ - 120201**5972</option>
+                                <option value="cuenta4">Corriente Ero - 120201**7108</option>
+                            </select>
+
+                        </div>
+
+                        <div class="info-Usurio">
+
+                            <select name="destLoc" class="input-text" style="display: none;">
+                                <option value="">Seleccione cuenta Destino</option>
+                                <option value="destino1">Corriente Bs - 150103**0501</option>
+                                <option value="destino2">Ahorro - 150107**0532</option>
+                            </select>
+
+                            <select name="destExt" required class="input-text">
+                                <option value="">Seleccione cuenta Destino</option>
+                                <option value="destino3">Corriente $ - 120201**5972</option>
+                                <option value="destino4">Corriente Ero - 120201**7108</option>
+                            </select>
+
+                        </div>
+
+
+                        <div class="info-Usurio">
+                            <input type="text" name="Monto" id="" placeholder="Cantidad:" required class="input-text" pattern="[0-9]+"> 
+                        </div>
+
+
+
+                        <div class="b">
+
+                            <input type="reset" id="Blimpiar" value="Limpiar" class="bton">
+
+                            <input type="submit" value="Pagar" class="bton" />
+                        </div>
+
+
+                    </form>
+
+                </div>
+            </div>
+    </main>
+
+    <script src="../js/head-banco.js"></script>
+    <script src="../js/menu.js"></script>
+
+</body>
+
+</html>

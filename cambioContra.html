@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BanconTdos</title>
+    <link rel="stylesheet" href="css/cambio.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <a class="index-redi" href="index.html">
+                    <img src="images/logo-cn.png" class="image-logo1" />
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="pag">
+            <div class="contenedor">
+                <div class="contenido">
+                    <h3 class="tlt">Cambio de contraseña</h3>
+
+
+                    <form action="Login.html">
+
+                        <div class="info-Usurio">
+                            <input type="text" name="codigo" placeholder="Codigo de confirmacion" required
+                                class="input-text" />
+                        </div>
+
+                        <div class="info-Usurio">
+                            <input type="password" name="Contra" placeholder="Nueva Contraseña" required
+                                class="input-text" />
+                        </div>
+
+                        <div class="info-Usurio">
+                            <input type="password" name="ConfContra" placeholder="Confirmar Contraseña" required
+                                class="input-text" />
+                        </div>
+
+                        <div class="b">
+                            <input type="button" id="Bcancel" onclick="location='Login.html'" value="Cancelar"
+                                class="bton" />
+                            <input type="submit" value="Actualizar" class="bton" />
+                        </div>
+
+
+                    </form>
+                    <p class="text">
+                        Si eres nuevo cliente <a href="Sign-in.html"
+                            style="color:#2F473D; text-decoration: none;">Regístrate aquí</a> <br>
+                        Ya tienes cuenta? <a href="Login.html" style="color:#2F473D; text-decoration: none;">Inicia
+                            aquí</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <script>
+        alert("Codigo de confirmacion enviado a tu metodo de Verificación");
+    </script>
+
+</body>
+
+</html>

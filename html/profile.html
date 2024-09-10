@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BanconTdosOnline</title>
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <a class="index-redi" href="bancontdo.html">
+                    <img src="../images/logo-cn.png" class="image-logo1" />
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="pag">
+            <div class="contenedor">
+                <div class="contenido">
+
+                    <div class="profile-image">
+                        <label for="profile-image-upload">
+
+                            <div class="container-preview">
+                                <img src="../images/circle-user-solid.svg" id="profile-image-preview"
+                                    class="image-preview">
+                            </div>
+
+                        </label>
+                        <input type="file" name="FotoP" ;="" id="profile-image-upload" accept="image/*"
+                            onchange="previewImage(event)" style="display: none">
+                    </div>
+
+
+                    <h3 class="tlt">Usuario</h3>
+
+
+                    <div class="info-Usurio">
+                        <div class="input">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="Nombre" placeholder="Williams Alas" disabled required
+                                class="input-text" />
+
+                        </div>
+
+                        <div class="input">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido" name="Nombre" placeholder="Alas Brizuela" disabled required
+                                class="input-text" />
+
+                        </div>
+                    </div>
+
+                    <div class="info-Usurio">
+                        <div class="input">
+
+                            <label for="Numero">Numero</label>
+                            <input type="tel" onclick="location='cambio numero.html'" name="Numero Telefonico"
+                                id="Numero" value="04248090931" placeholder="numero de telefono" required
+                                class="input-text" />
+
+                        </div>
+                        <div class="input">
+                            <label for="Cedula">Cedula</label>
+                            <input type="text" name="Cedula" id="Cedula" placeholder="30539519" disabled required
+                                class="input-text" />
+
+                        </div>
+
+                    </div>
+
+                    <div class="info-Usurio">
+                        <div class="input">
+
+                            <label for="Contraseña">Contraseña</label>
+                            <input type="password" onclick="location='cambioContra.html'" value="hola como tas?"
+                                id="Contraseña" name="Contraseña" placeholder="Contraseña" required
+                                class="input-text" />
+
+                        </div>
+                        <div class="input">
+                            <label for="Correo">Correo</label>
+
+                            <input type="email" name="Correo" id="Correo" placeholder="Walas@gmail.com" required
+                                disabled class="input-text" />
+
+                        </div>
+                    </div>
+
+
+                    <div class="b">
+                        <a href="bancontdo.html" class="bton">
+                            Volver
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <script>
+        function previewImage(event) {
+            var input = event.target
+            var reader = new FileReader()
+            reader.onload = function () {
+                var image = document.getElementById('profile-image-preview')
+                image.src = reader.result
+            }
+            reader.readAsDataURL(input.files[0])
+            document.getElementById("cambiar").removeAttribute("disabled");
+        }
+    </script>
+
+</body>
+
+</html>

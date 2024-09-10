@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BanconTdosOnline</title>
+    <link rel="stylesheet" href="../css/Operaciones.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/header2.css">
+</head>
+
+<body>
+
+    <header>
+    </header>
+
+    <main>
+
+        <div class="pag">
+            <div class="contenedor">
+                <div class="contenido">
+                    <h3 class="tlt">Pago Movil</h3>
+
+
+                    <form action="bancontdo.html">
+
+                        <div class="info-Usurio">
+
+                            <select name="Cuenta" required class="input-text">
+                                <option value="">Seleccione Cuenta a debitar</option>
+                                <option value="cuenta1">150103**0501</option>
+                                <option value="Cuenta2">150107**0532</option>
+                            </select>
+
+                        </div>
+
+                        <div class="info-Usurio">
+
+                            <input type="text" name="Cedula" placeholder="Cedula" required class="input-text" />
+
+                        </div>
+
+                        <div class="info-Usurio">
+                            <select name="Cuenta" required id="" class="input-text">
+                                <option value="">Seleccione Banco Destino</option>
+                                <option value="tipo1">Banco de venezuela-0102</option>
+                                <option value="tipo2">Banco Caribe-0163</option>
+                                <option value="tipo3">Banco Mercantil-0105</option>
+                                <option value="tipo4">Banco Exterior-0115</option>
+                                <option value="tipo5">Bancaamiga-0172</option>
+                                <option value="tipo6">BBVA Provincial-0108</option>
+
+                            </select>
+                        </div>
+
+
+                        <div class="info-Usurio">
+                            <input type="tel" name="Numero Telefonico" placeholder="Numero Telefonico" required pattern="[0-9]+"
+                                class="input-text" />
+
+                        </div>
+
+                        <div class="info-Usurio">
+                            <input type="text" name="Monto" id="" placeholder="Monto a pagar:" required pattern="[0-9]+"
+                                class="input-text">
+                        </div>
+
+                        <div class="info-Usurio">
+                            <input type="text" name="concepto" id="" placeholder="concepto de pago:" requiredpattern="^(?!\s+$).*\S$"
+                                class="input-text">
+                        </div>
+
+                        <div class="b">
+
+                            <input type="reset" value="Limpiar" id="Blimpiar" class="bton">
+
+                            <input type="submit" value="Pagar" class="bton" />
+                        </div>
+
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </main>
+
+
+    <script src="../js/head-banco.js"></script>
+    <script src="../js/menu.js"></script>
+
+</body>
+
+</html>

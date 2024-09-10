@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BanconTdosOnline</title>
+    <link rel="stylesheet" href="../css/Operaciones.css">
+    <link rel="stylesheet" href="../css/header2.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <header></header>
+
+    <main>
+        <div class="pag">
+            <div class="contenedor">
+                <div class="contenido" style="width: 800px;">
+
+                    <h3 class="tlt">Solictud de Tarjeta</h3>
+
+                    <form action="bancontdo.html">
+                        <div class="Be">
+                            <button class="bton" id="Blimpiar" type="button">Virtual</button>
+                            <button class="bton" id="Bo" type="button">Fisica</button>
+                        </div>
+
+                        <div class="info-Usurio">
+                            <label for="selectC">Costo de la tarjeta: Bs</label>
+                            <select name="Cuenta" required id="selectC" class="input-text">
+                                <option value="">Seleccione Cuenta a debitar</option>
+                                <option value="cuenta1">150103**0501</option>
+                                <option value="Cuenta2">150107**0532</option>
+                            </select>
+
+                        </div>
+
+                        <div class="info-Usurio">
+                            <select name="Tipo" required id="tarjeta" class="input-text">
+                                <option value="">Tipo de Tarjeta </option>
+                                <option value="tipo1">Visa </option>
+                                <option value="tipo2">Mastercard</option>
+                                <option value="tipo3">Credito</option>
+
+                            </select>
+                        </div>
+
+                        <div class="fisica">
+                            <label for="estado">Lugar de retiro</label>
+
+                            <div class="info-Usurio">
+
+                                <select name="estado" required id="estado" class="input-text">
+                                    <option value="">Estado</option>
+                                    <option value="estado1">Nueva Esparta</option>
+                                </select>
+                            </div>
+
+                            <div class="info-Usurio">
+                                <select name="ofi" required id="ofi" class="input-text">
+                                    <option value="">Oficina</option>
+                                    <option value="oficina1">Juan Griego</option>
+                                    <option value="oficina2">Porlamar</option>
+                                    <option value="oficina3">Plaza Bolivar</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="virtual" style="display: none;">
+                            <label for="ofi">Verifique sus datos</label>
+                            <div class="info-Usurio">
+                                <div class="input">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" id="nombre" name="Nombre" placeholder="Williams Alas" disabled
+                                        required class="input-text">
+
+                                </div>
+
+                                <div class="input">
+                                    <label for="apellido">Apellido</label>
+                                    <input type="text" id="apellido" name="Nombre" placeholder="Alas Brizuela" disabled
+                                        required class="input-text">
+
+                                </div>
+                            </div>
+
+                            <div class="info-Usurio">
+                                <div class="input">
+
+                                    <label for="Numero">Numero</label>
+                                    <input type="tel" name="Numero Telefonico" id="Numero" value="04248090931"
+                                        placeholder="numero de telefono" required class="input-text">
+
+                                </div>
+                                <div class="input">
+                                    <label for="Cedula">Cedula</label>
+                                    <input type="text" name="Cedula" id="Cedula" placeholder="30539519" disabled
+                                        required class="input-text">
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="b">
+                            <input type="reset" value="Limpiar" id="Blimpiar" class="bton">
+                            <input type="submit" value="Solicitar" class="bton" />
+                        </div>
+
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+    </main>
+
+    <script src="../js/head-banco.js"></script>
+    <script src="../js/menu.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+
+header{
+    display: flex;
+    background-color: #22d289;
+    height: 85px;
+    align-items: center;
+    padding: 5px 5%;
+}
+
+a {
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding: 10px 25px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    text-align: center;
+}
+
+a:hover {
+    background-color: rgba(0, 21, 209, 0.1);
+    transform: scale(1.1);
+}
+
+.img-header:hover{
+    background-color:transparent;
+    transform: scale(1.0);
+}
+
+.margen{
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+}    
+
+
+.nav {
+    position: relative;
+    background-color: #22d289;
+    width: 100%;
+    min-height: 85px;
+    margin-left: 20px;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.nav ul li{
+    margin-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.menu {
+    position: absolute;
+    top:100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    max-height: 0;
+    transition: max-heigth 2s ease;
+    overflow: hidden;
+
+}
+
+.menu.show {
+    max-height: 300px;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+}
+
+.menu ul li {
+    position: relative;
+    display: block;
+    width: 100%;
+
+}
+
+.menu ul li a {
+    width: 100%;
+}
+
+.avatar{
+    width: 70px;
+    height: 50px;
+}
+
+svg{
+    width: 20px;
+    height: 24px;
+    color: rgba(0, 0, 0, 0.7);
+}

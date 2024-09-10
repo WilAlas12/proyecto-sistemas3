@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BanconTdosOnline</title>
+
+    <link rel="stylesheet" href="../css/Operaciones.css">
+    <link rel="stylesheet" href="../css/header2.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <header></header>
+
+    <main>
+        <div class="pag"></div>
+        <div class="contenedor">
+            <div class="contenido">
+                <h3 class="tlt">Apertura de cuenta</h3>
+
+
+                <form action="bancontdo.html">
+
+                    <div class="info-Usurio">
+
+                        <select name="cmp" id="cmp" required class="input-text">
+                            <option value="">Seleccione Cuenta a debitar</option>
+                            <option value="cuenta1">Corriente Bs - 150103**0501</option>
+                            <option value="Cuenta2">Ahorro - 150107**0532</option>
+                            <option value="cuenta3">Corriente $ - 120201**5972</option>
+                            <option value="cuenta4">Corriente Ero - 120201**7108</option>
+                        </select>
+
+                    </div>
+                    <div class="info-Usurio">
+
+                        <select name="tipo" id="tipo" required class="input-text">
+                            <option value="">Seleccione Tipo de cuenta</option>
+                            <option value="tipo1">Ahorro Bs</option>
+                            <option value="tipo2">Corriente $</option>
+                            <option value="tipo3">Corriente Peso Colombiano</option>
+                            <option value="tipo4">Corriente Ero</option>
+                        </select>
+                    </div>
+
+                    <label for="accion">Sucursal de asistencia</label>
+                    <div class="info-Usurio">
+
+                        <select name="estado" id="estado" required class="input-text">
+                            <option value="">Estado</option>
+                            <option value="estado1">Nueva Esparta</option>
+                        </select>
+                    </div>
+
+                    <div class="info-Usurio">
+
+                        <select name="accion" id="accion" required class="input-text">
+                            <option value="">Oficina</option>
+                            <option value="oficina1">Juan Griego</option>
+                            <option value="oficina2">Porlamar</option>
+                            <option value="oficina3">Plaza Bolivar</option>
+                        </select>
+                    </div>
+
+                    <div class="info-Usurio">
+                        <label for="condicion">
+                            <input type="checkbox" value="condicion" name="condicion" required id="condicion">
+                            Acepta los terminos y condiciones</label>
+                    </div>
+
+
+                    <div class="b">
+
+                        <input type="reset" id="Blimpiar" value="Limpiar" class="bton">
+
+                        <input type="submit" value="Pagar" class="bton" />
+                    </div>
+
+
+                </form>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/head-banco.js"></script>
+    <script src="../js/menu.js"></script>
+
+</body>
+
+</html>

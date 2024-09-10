@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BanconTdosOnline</title>
+    <link rel="stylesheet" href="../css/Operaciones.css">
+    <link rel="stylesheet" href="../css/header2.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <header></header>
+
+    <main>
+        <div class="pag">
+            <div class="contenedor">
+                <div class="contenido">
+                    <h3 class="tlt">Trajeta de credito</h3>
+
+                    <form action="bancontdo.html">
+                        <div class="Be">
+                            <button class="bton" id="Blimpiar" type="button">Propia</button>
+                            <button class="bton" id="Bo" type="button">terceros</button>
+                        </div>
+                        <div class="info-Usurio">
+
+                            <select name="Cuenta" required class="input-text">
+                                <option value="">Seleccione Cuenta a debitar</option>
+                                <option value="cuenta1">150103**0501</option>
+                                <option value="Cuenta2">150107**0532</option>
+                            </select>
+
+                        </div>
+
+                        <div class="propia">
+                            <div class="info-Usurio">
+                                <select name="tar" required class="input-text">
+                                    <option value="">Seleccione Tarjeta a pagar</option>
+                                    <option value="tar">150103**0501</option>
+                                </select>
+                            </div>
+
+
+                            <div class="terceros" style="display: none;">
+
+                                <div class="info-Usurio">
+                                    <input type="tel" name="Ntarjeta" placeholder="Tarjeta a pagar" required
+                                        class="input-text">
+
+                                </div>
+
+                                <div class="info-Usurio">
+
+                                    <input type="text" name="Cedula" placeholder="Cedula" required class="input-text">
+
+                                </div>
+
+                                <div class="info-Usurio">
+
+                                    <input type="email" name="correo" placeholder="correo" required class="input-text">
+
+                                </div>
+
+                                <div class="info-Usurio">
+
+                                    <input type="text" name="persona" placeholder="Nombre del receptor" required
+                                        class="input-text">
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="info-Usurio">
+                                <input type="text" name="Monto" placeholder="Monto a pagar:" required pattern="[0-9]+"
+                                    class="input-text">
+                            </div>
+
+
+                            <div class="b">
+
+                                <input type="reset" value="Limpiar" id="Blimpiar" class="bton">
+
+                                <input type="submit" value="Enviar" class="bton" />
+                            </div>
+
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </main>
+
+    <script src="../js/head-banco.js"></script>
+    <script src="../js/menu.js"></script>
+
+
+</body>
+
+</html>

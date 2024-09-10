@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BanconTdos</title>
+    <link rel="stylesheet" href="css/Sign.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <a class="index-redi" href="index.html">
+                    <img src="images/logo-cn.png" class="image-logo1" />
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="pag">
+            <div class="contenedor">
+                <div class="contenido">
+                    <h3 class="tlt">Regístrate aquí</h3>
+
+                    <a href="#" class="buton">
+                        <button class="Enlace-U">Persona</button>
+                    </a>
+                    <a href="#" class="buton">
+                        <button class="Enlace-B">Empresa</button>
+                    </a>
+                    <form action="Login.html">
+
+                        <div class="info-Usurio">
+                            <input type="text" name="Nombre" placeholder="Nombre" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]+"
+                                required class="input-text" >
+                            <input type="text" name="Apellido" placeholder="Apellido" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]+"
+                                required class="input-text" >
+                        </div>
+
+                        <div class="info-Usurio">
+                            <input type="text" name="Cedula" placeholder="Cedula" required class="input-text" pattern="[0-9]+">
+                            <input type="text" name="Nombre de Usuario" placeholder="Nombre de Usuario" required pattern="^(?!\s+$).*\S$"
+                                class="input-text">
+                        </div>
+
+                        <div class="info-Usurio">
+                            <input type="tel" name="Numero Telefonico" placeholder="Numero Telefonico" required pattern="[0-9]+"
+                                class="input-text" />
+                            <input type="email" name="Correo" placeholder="Correo" required class="input-text" >
+                        </div>
+
+                        <div class="info-Usurio">
+                            <input type="password" name="Contra" placeholder="Contraseña" required class="input-text">
+                            <input type="password" name="confirm-Contra" placeholder="Confirmar Contraseña" required
+                                class="input-text" />
+                        </div>
+
+
+
+                        <div class="b">
+                            <input type="submit" value="Registrase" class="bton" />
+                        </div>
+
+
+                    </form>
+
+                    <p class="text">
+                        Ya tienes cuenta? <a href="Login.html" style="color:#2F473D; text-decoration: none;">Inicia
+                            aquí</a></p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

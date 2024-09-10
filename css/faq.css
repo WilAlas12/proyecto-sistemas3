@@ -1,0 +1,160 @@
+.pag {
+    position: inherit;
+    width: 100%;
+    background-color: #ffffff;
+    height: auto;
+
+}
+
+.contenedor {
+    padding-bottom: 30px;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    top: 0px;
+    background: #fafafaec;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pantalla {
+    width: 32.5%;
+    margin: 50px;
+    max-width: auto;
+    height: 400px;
+    background-color: #fafafaec;
+    z-index: 1000;
+    /*
+    overflow: hidden;
+    display:grid;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Tt {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
+}
+
+.titulo {
+    color: #000;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 0.7rem;
+    width: auto;
+}
+
+.lista {
+    background-color: #fffcfc;
+}
+
+.Contact {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #2F473D;
+
+    display: grid;
+    justify-items: center;
+
+}
+
+.list {
+    background-color: transparent;
+    border-bottom: 2px solid #fff;
+    max-width: 700px;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+.pregunta {
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9CFED8;
+}
+
+.pregunta h3 {
+    color: #000;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1;
+    margin-left: 0.7rem;
+    margin-bottom: 2px;
+    padding: 5px;
+    justify-content: center;
+    width: auto;
+}
+
+.infor {
+    background-color: #fafafa;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+
+.infor p {
+
+    line-height: 1.6;
+    margin-left: 20px;
+    text-align: justify;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.list.activa .infor {
+    max-height: 300px;
+}
+
+.list.activa svg {
+    transform: rotate(180deg);
+}
+
+svg {
+    transition: transform 0.5s ease-in-out;
+    width: 20px;
+    height: 100%;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+p {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.Enlace-U {
+    width: 140px;
+    height: 45px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    background: #2F473D;
+    border: 2px solid #2F473D;
+    border-radius: 15px;
+    transition: all 0.3s ease 0s;
+}
+
+
+.K {
+    background: #FFFFFF;
+    color: #2F473D;
+}
+
+.Enlace-U:hover {
+    background: #FFFFFF;
+    color: #2F473D;
+    transform: scale(1.1);
+    box-shadow: 2.5px 5px 5px 2px rgba(0, 0, 0, 0.2);
+}
